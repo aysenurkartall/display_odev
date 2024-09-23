@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Örnekleri</title>
+    <style>
+        .block-element {
+            display: block;
+            width: 100%;
+            background-color: aquamarine;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .inline-element {
+            display: inline;
+            background-color: aqua;
+            padding: 5px;
+            margin-right: 5px;
+        }
+
+        .inline-block-element {
+            display: inline-block;
+            width: 100px;
+            background-color: crimson;
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            background-color: blanchedalmond;
+            padding: 10px;
+        }
+        
+        .flex-item {
+            background-color: aquamarine;
+            padding: 10px;
+            margin: 5px;
+            width: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Display Örnekleri</h1>
+
+<!-- Block Element: Her zaman yeni bir satırda başlar ve genişliği tüm sayfayı kaplar. -->
+ <div class="block-element">Bu bir block elementtir. Tam genişlik kaplar</div>
+
+ <!-- Inline Element:Inline elementler diğer elementlerin yanına yerleşir ve sadece içeriklerin genişliği kadar yer kaplar. -->
+  <span class="inline-element">Bu bir inline elementtir.</span>
+  <span class="inline-element">Bu başka bir inline elementtir.</span>
+
+  <!-- Inline Block Element: Inline elementler gibi yan yana dizilir ancak block elementler gibi genişlik ve yükseklik ayarlanabilir. -->
+   <div class="inline-block-element">Inline-Block 1</div>
+   <div class="inline-block-element">Inline-Block 2</div>
+
+   <!-- Flexbox (display: flex;): Flexbpx, elementleri esnek bir düzende hizalamak için kullanılır. -->
+<div class="flex-container">
+    <div class="flex-item">Flex item 1</div>
+    <div class="flex-item">Flex item 2</div>
+    <div class="flex-item">Flex item 3</div>
+</div>
+    
+</body>
+</html>
